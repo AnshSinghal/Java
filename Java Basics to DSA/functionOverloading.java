@@ -18,5 +18,8 @@ public class functionOverloading {
         fun(3, 4);
         fun("Hello World!");
     }
+
+    // Ambiguity in function overloading is when the compiler is confused about which function to call
+    
     
 }
