@@ -12,6 +12,9 @@ public class variableLengthArgs {
         printNumbers(1, 2, 3, 4, 5);
         // it can take any number of arguments ranging from 0 to n
     }
+
+    // also the variable length arguments should be the last argument in the function   
+    // static void printNumbers(int... numbers, int x) { // this will give an error
     
     
 }
