@@ -22,7 +22,7 @@ public class staticBlock {
         //Here the values of a and b are 4 and 20 respectively
 
         staticBlock.b+=5;
-        System.out.println("Value of a: " + staticBlock.a + " Value of b: " + staticBlock.b);\
+        System.out.println("Value of a: " + staticBlock.a + " Value of b: " + staticBlock.b);
         //Here the values of a and b are 4 and 25 respectively
 
         staticBlock obj2 = new staticBlock();

@@ -17,6 +17,6 @@ public class input_output {
         System.out.print(name);
         System.out.print(fullName);
 
-        name = int name;
+
     }
 }

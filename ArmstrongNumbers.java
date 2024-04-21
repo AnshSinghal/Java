@@ -1,4 +1,3 @@
-package JavaBasicsToDSA;
 import java.util.*;
 public class ArmstrongNumbers {
     // Armstrong number is a number that is equal to the sum of cubes of its digits
@@ -26,5 +25,6 @@ public class ArmstrongNumbers {
                 System.out.println(i);
             }
         }
+        sc.close();
     }
 }
