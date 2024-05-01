@@ -29,12 +29,19 @@ public class methodOverriding { // Method Overriding is a feature that allows a 
             currentShape.area();  // Polymorphism in action!
         }
 
+        shapes obj3 = new Circle();
+        obj3.staticMethod(); // this will call the final method of parent class
+
     }
 }
 
 class shapes {
     void area() {
         System.out.println("The formula for area is not defined for this shape");
+    }
+
+    static void staticMethod() {
+        System.out.println("I am in shapes class.");
     }
 }
 
@@ -59,5 +66,11 @@ class Circle extends shapes {
     @Override
     void area() {
         System.out.println("Area of circle is pi * radius * radius");
+    }
+
+
+    // @Override // this will give an error because static methods cannot be overridden
+    static void staticMethod() {
+        System.out.println("I am in Circle class.");
     }
 }

@@ -15,9 +15,12 @@ public class Main {
 
         // it is the type of the referce variable that determines what memebers can be
         // accessed
+        // parent class reference can only access parent class members
         parentClass obj2 = new childClass();
         obj2.x = 10;
+        //obj2.display() // error because display() is a child class method
         // obj2.a = 5;
+        //Upcasting in java means creating object of child class with parent class reference
 
         // childClass obj3 = new parentClass(); // error
         // There are many variables in child class that are not in parent class so it is
@@ -29,10 +32,19 @@ public class Main {
         childClass superObj = new childClass(10);
 
 
+
+
+
+
+
+
     }
 }
 
 class childClass extends parentClass {
+
+    // void finalMethod() {} //final method cannot be overridden
+
     // this.pvt = 0; // error because pvt is private
     int superVariable = 2;
     int a;
@@ -64,4 +76,10 @@ class childClass extends parentClass {
         System.out.println("Super Variable: " + super.superVariable);
         System.out.println("Child Class Variable: " + this.superVariable);
     }
+
+    void display() {
+        System.out.println("This is a child class");
+    }
 }
+
+// class hello extends finalClass {} // error because final class cannot be inherited

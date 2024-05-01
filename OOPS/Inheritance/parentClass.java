@@ -26,4 +26,14 @@ public class parentClass {
         this.superVariable = superVariable;
     }
 
+    final void finalMethod() {
+        System.out.println("This is a final method");
+    }
+
+    
+
+}
+
+final class finalClass {
+    // final class cannot be inherited
 }
