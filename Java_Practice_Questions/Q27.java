@@ -1,3 +1,9 @@
+// Create a class Length with data members feets and inches.
+// • Define getData() for input Length
+// • Override toString() function to return length in (e.g. 4’5”) format
+// • Sum() function to add two Length
+// • Override equals() to compare two lengths
+
 package Java_Practice_Questions;
 import java.util.Scanner;
 
